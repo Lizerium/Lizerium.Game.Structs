@@ -51,10 +51,11 @@
 
 > [!TIP]
 > TODO:  CDN - storage.lizup.ru
-* `LizeriumCMP`
-* `LizeriumMAT`
-* `LizeriumTXM`
-* `Lizerium3DB`
+* `Lizerium.Game.CMP`
+* `Lizerium.Game.MAT`
+* `Lizerium.Game.TXM`
+* `Lizerium.Game.3DB`
+* `Lizerium.Game.Music`
 
 ### 2. 🔄 XML-слой и промежуточные представления
 

@@ -1,4 +1,7 @@
-<h1 align="center">🎮 Lizerium.Game.Structs 🎮</h1>
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/Lizerium/.github/main/media/logo.png" width="32" style="vertical-align: middle;" />
+  Lizerium.Game.Structs
+</h1>
 
 <p align="center">
   Structural map of game data and formats for the classical Lizerium branch
@@ -19,126 +22,116 @@
 ---
 
 > [!NOTE]
-> This project is part of the **Lizerium** ecosystem and belongs to the following direction:
+> This repository is part of the **Lizerium** ecosystem:
 >
-> - [`Lizerium.Hub`](https://github.com/Lizerium/Lizerium.Hub)
->
-> If you are looking for related engineering and supporting tools, start there.
-
-## Purpose
-
-This repository serves as a **structural index of game data and formats for the classical branch** within the **Lizerium** ecosystem.
-
-It is not a primary implementation, but acts as:
-
-- a map of game formats and subsystems
-- a navigation entry point for the data layer of the modification
-- a description of roles for game-related repositories
-- a place for logical classification of game data
-- an architectural overview layer of the classical game pipeline
+> - https://github.com/Lizerium/Lizerium.Hub
 
 ---
 
-## Role in the Ecosystem
+## What is this
 
-This repository helps to understand:
+`Lizerium.Game.Structs` is a map of the data layer.
 
-- which projects belong to the data layer of the classical modification
-- how game formats, XML representations, and service structures are separated
-- where the entry points for processing game resources are located
-- how the internal logic of the data pipeline is organized
-- which layers are used for analysis, conversion, and validation
+There is no core logic here.  
+This repository exists to:
+
+- list game formats
+- show how data is structured
+- provide quick navigation to related repositories
 
 ---
 
-## What’s Included in This Direction
-
-### 1. 📦 Base Game Formats
-
-Original and derived game formats used in the classical Lizerium branch.
-
-- [`Lizerium.Game.INI`](https://github.com/Lizerium/Lizerium.Game.INI)
-- [`Lizerium.Game.Dlls`](https://github.com/Lizerium/Lizerium.Game.Dlls)
-- [`Lizerium.Game.SPH`](https://github.com/Lizerium/Lizerium.Game.SPH)
+## How to use it
 
 > [!TIP]
-> TODO: CDN - storage.lizup.ru
-
-- `Lizerium.Game.CMP`
-- `Lizerium.Game.MAT`
-- `Lizerium.Game.TXM`
-- `Lizerium.Game.3DB`
-- `Lizerium.Game.Music`
+> If you are working with Freelancer data:
+>
+> 1. Find the format you need
+> 2. Open the corresponding repository
+> 3. Work at the implementation level there
 
 ---
 
-### 2. 🔄 XML Layer & Intermediate Representations
+## Formats
 
-XML representations of game formats used for analysis, transformation, validation, and data preparation.
+### Base formats
 
-- [`Lizerium.Game.XML.CMP`](https://github.com/Lizerium/Lizerium.Game.XML.CMP)
-- [`Lizerium.Game.XML.MAT`](https://github.com/Lizerium/Lizerium.Game.XML.MAT)
-- [`Lizerium.Game.XML.TXM`](https://github.com/Lizerium/Lizerium.Game.XML.TXM)
-- [`Lizerium.Game.XML.SPH`](https://github.com/Lizerium/Lizerium.Game.XML.SPH)
-- [`Lizerium.Game.XML.3DB`](https://github.com/Lizerium/Lizerium.Game.XML.3DB)
-- [`Lizerium.Game.XML.ALE`](https://github.com/Lizerium/Lizerium.Game.XML.ALE)
-- [`Lizerium.Game.XML.ANM`](https://github.com/Lizerium/Lizerium.Game.XML.ANM)
-- [`Lizerium.Game.XML.DFM`](https://github.com/Lizerium/Lizerium.Game.XML.DFM)
-- [`Lizerium.Game.XML.UTF`](https://github.com/Lizerium/Lizerium.Game.XML.UTF)
-- [`Lizerium.Game.XML.VMS`](https://github.com/Lizerium/Lizerium.Game.XML.VMS)
+Original and derived game formats:
 
----
+- https://github.com/Lizerium/Lizerium.Game.INI
+- https://github.com/Lizerium/Lizerium.Game.Dlls
+- https://github.com/Lizerium/Lizerium.Game.SPH
 
-### 3. 🧪 Data Preparation & Validation Integration
+Additional:
 
-A layer used to support testing, updating data representations, and validating game resources.
-
-- XML repositories used in testing scenarios
-- configuration and auxiliary structures
-- updatable data layers synchronized with the modification
+- CMP
+- MAT
+- TXM
+- 3DB
+- Music
 
 ---
 
-## Architecture Diagram
+### XML layer
 
-```text
+Intermediate representations used for analysis and processing:
+
+- https://github.com/Lizerium/Lizerium.Game.XML.CMP
+- https://github.com/Lizerium/Lizerium.Game.XML.MAT
+- https://github.com/Lizerium/Lizerium.Game.XML.TXM
+- https://github.com/Lizerium/Lizerium.Game.XML.SPH
+- https://github.com/Lizerium/Lizerium.Game.XML.3DB
+- https://github.com/Lizerium/Lizerium.Game.XML.ALE
+- https://github.com/Lizerium/Lizerium.Game.XML.ANM
+- https://github.com/Lizerium/Lizerium.Game.XML.DFM
+- https://github.com/Lizerium/Lizerium.Game.XML.UTF
+- https://github.com/Lizerium/Lizerium.Game.XML.VMS
+
+---
+
+### Data preparation and validation
+
+Layer used for testing and data validation:
+
+- prepared XML data
+- configuration structures
+- integration with validation systems
+
+---
+
+## Structure
+
+```
+
 Lizerium.Game.Structs
-├── Base Formats
-│   ├── LizeriumINI
-│   ├── LizeriumDlls
-│   ├── LizeriumCMP
-│   ├── LizeriumMAT
-│   ├── LizeriumTXM
-│   ├── LizeriumSPH
-│   └── Lizerium3DB
-│
-└── XML Layer
-    ├── LizeriumCMPXML
-    ├── LizeriumMATXML
-    ├── LizeriumTXMXML
-    ├── LizeriumSPHXML
-    ├── Lizerium3DBXML
-    ├── LizeriumALEXML
-    ├── LizeriumANMXML
-    ├── LizeriumDFMXML
-    ├── LizeriumUTFXML
-    └── LizeriumVMSXML
+├── Base formats
+└── XML layer
+
 ```
 
 ---
 
-## Note
+## Important
 
-This repository describes the **classical data branch of the modification**, not the Unity-based implementation of the game.
-
-The new game branch, runtime logic, ECS, visual systems, and Unity architecture are separated into:
-
-- [`Lizerium.Unity.Structs`](https://github.com/Lizerium/Lizerium.Unity.Structs)
+> [!IMPORTANT]
+> This is the data layer of the classic branch (Freelancer).
+>
+> Unity runtime, game logic, and visual systems are handled separately:
+>
+> - https://github.com/Lizerium/Lizerium.Unity.Structs
 
 ---
 
-## Relation to Other Directions
+## Relations
 
-This layer is connected with:
+Connected to:
 
-- [`Lizerium.Frameworks.Structs`](https://github.com/Lizerium/Lizerium.Frameworks.Structs) — testing and validation systems
+- https://github.com/Lizerium/Lizerium.Frameworks.Structs — validation and testing
+
+---
+
+## Important
+
+> [!TIP]
+> If you need a specific format or tool — go to the corresponding repository.  
+> This is only a map.

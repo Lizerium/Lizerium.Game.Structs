@@ -1,7 +1,10 @@
-<h1 align="center">🎮 Lizerium.Game.Structs 🎮</h1>
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/Lizerium/.github/main/media/logo.png" width="32" style="vertical-align: middle;" />
+  Lizerium.Game.Structs
+</h1>
 
 <p align="center">
-  Структурная карта игровых данных и форматов классической ветки Lizerium
+  Карта игровых форматов и data-слоя Lizerium (Freelancer)
 </p>
 
 <div align="center" style="margin: 20px 0; padding: 10px; background: #1c1917; border-radius: 10px;">
@@ -19,122 +22,116 @@
 ---
 
 > [!NOTE]
-> Этот проект является частью экосистемы **Lizerium** и относится к направлению:
+> Этот репозиторий — часть экосистемы **Lizerium**:
 >
-> - [`Lizerium.Hub`](https://github.com/Lizerium/Lizerium.Hub)
->
-> Если вы ищете связанные инженерные и вспомогательные инструменты, начните оттуда.
-
-## Назначение
-
-Этот репозиторий является **структурным индексом игровых данных и форматов классической ветки** внутри экосистемы **Lizerium**.
-
-Он не является основной реализацией, а служит как:
-
-- карта игровых форматов и подсистем
-- точка навигации по data-слою модификации
-- описание ролей игровых репозиториев
-- место для логической классификации игровых данных
-- слой архитектурного обзора классического игрового контура
+> - https://github.com/Lizerium/Lizerium.Hub
 
 ---
 
-## Роль в экосистеме
+## Что это
 
-Этот репозиторий помогает понять:
+`Lizerium.Game.Structs` — это карта data-слоя.
 
-- какие проекты относятся к data-слою классической модификации
-- как разделены игровые форматы, XML-представления и служебные структуры
-- где находятся точки входа в обработку игровых ресурсов
-- как устроена внутренняя логика data-контура
-- какие слои используются для анализа, конвертации и валидации
+Здесь нет основной логики.  
+Репозиторий нужен, чтобы:
+
+- видеть игровые форматы
+- понимать, как устроены данные
+- быстро переходить к нужным репозиториям
 
 ---
 
-## Что входит в это направление
-
-### 1. 📦 Базовые игровые форматы
-
-Оригинальные и производные игровые форматы, используемые в классической ветке Lizerium.
-
-- [`Lizerium.Game.INI`](https://github.com/Lizerium/Lizerium.Game.INI)
-- [`Lizerium.Game.Dlls`](https://github.com/Lizerium/Lizerium.Game.Dlls)
-- [`Lizerium.Game.SPH`](https://github.com/Lizerium/Lizerium.Game.SPH)
+## Как этим пользоваться
 
 > [!TIP]
-> TODO: CDN - storage.lizup.ru
-
-- `Lizerium.Game.CMP`
-- `Lizerium.Game.MAT`
-- `Lizerium.Game.TXM`
-- `Lizerium.Game.3DB`
-- `Lizerium.Game.Music`
-
-### 2. 🔄 XML-слой и промежуточные представления
-
-XML-представления игровых форматов, используемые для анализа, преобразования, проверки и подготовки данных.
-
-- [`Lizerium.Game.XML.CMP`](https://github.com/Lizerium/Lizerium.Game.XML.CMP)
-- [`Lizerium.Game.XML.MAT`](https://github.com/Lizerium/Lizerium.Game.XML.MAT)
-- [`Lizerium.Game.XML.TXM`](https://github.com/Lizerium/Lizerium.Game.XML.TXM)
-- [`Lizerium.Game.XML.SPH`](https://github.com/Lizerium/Lizerium.Game.XML.SPH)
-- [`Lizerium.Game.XML.3DB`](https://github.com/Lizerium/Lizerium.Game.XML.3DB)
-- [`Lizerium.Game.XML.ALE`](https://github.com/Lizerium/Lizerium.Game.XML.ALE)
-- [`Lizerium.Game.XML.ANM`](https://github.com/Lizerium/Lizerium.Game.XML.ANM)
-- [`Lizerium.Game.XML.DFM`](https://github.com/Lizerium/Lizerium.Game.XML.DFM)
-- [`Lizerium.Game.XML.UTF`](https://github.com/Lizerium/Lizerium.Game.XML.UTF)
-- [`Lizerium.Game.XML.VMS`](https://github.com/Lizerium/Lizerium.Game.XML.VMS)
-
-### 3. 🧪 Подготовка данных и интеграция с проверками
-
-Слой, используемый для поддержки тестирования, обновления data-представлений и валидации игровых ресурсов.
-
-- XML-репозитории, используемые в тестовых сценариях
-- конфигурационные и вспомогательные структуры
-- обновляемые data-слои, синхронизируемые с модификацией
+> Если ты работаешь с данными Freelancer:
+>
+> 1. Найди нужный формат
+> 2. Перейди в соответствующий репозиторий
+> 3. Работай уже на уровне конкретной реализации
 
 ---
 
-## Архитектурная схема
+## Форматы
 
-```text
+### Базовые форматы
+
+Оригинальные и производные форматы игры:
+
+- https://github.com/Lizerium/Lizerium.Game.INI
+- https://github.com/Lizerium/Lizerium.Game.Dlls
+- https://github.com/Lizerium/Lizerium.Game.SPH
+
+Дополнительно:
+
+- CMP
+- MAT
+- TXM
+- 3DB
+- Music
+
+---
+
+### XML слой
+
+Промежуточные представления для анализа и обработки:
+
+- https://github.com/Lizerium/Lizerium.Game.XML.CMP
+- https://github.com/Lizerium/Lizerium.Game.XML.MAT
+- https://github.com/Lizerium/Lizerium.Game.XML.TXM
+- https://github.com/Lizerium/Lizerium.Game.XML.SPH
+- https://github.com/Lizerium/Lizerium.Game.XML.3DB
+- https://github.com/Lizerium/Lizerium.Game.XML.ALE
+- https://github.com/Lizerium/Lizerium.Game.XML.ANM
+- https://github.com/Lizerium/Lizerium.Game.XML.DFM
+- https://github.com/Lizerium/Lizerium.Game.XML.UTF
+- https://github.com/Lizerium/Lizerium.Game.XML.VMS
+
+---
+
+### Подготовка и проверка данных
+
+Слой, связанный с тестированием и валидацией:
+
+- подготовленные XML-данные
+- конфигурационные структуры
+- интеграция с проверками
+
+---
+
+## Структура
+
+```
+
 Lizerium.Game.Structs
-├── Base Formats
-│   ├── LizeriumINI
-│   ├── LizeriumDlls
-│   ├── LizeriumCMP
-│   ├── LizeriumMAT
-│   ├── LizeriumTXM
-│   ├── LizeriumSPH
-│   └── Lizerium3DB
-│
-└── XML Layer
-    ├── LizeriumCMPXML
-    ├── LizeriumMATXML
-    ├── LizeriumTXMXML
-    ├── LizeriumSPHXML
-    ├── Lizerium3DBXML
-    ├── LizeriumALEXML
-    ├── LizeriumANMXML
-    ├── LizeriumDFMXML
-    ├── LizeriumUTFXML
-    └── LizeriumVMSXML
+├── Base formats
+└── XML layer
+
 ```
 
 ---
 
-## Примечание
+## Важно
 
-Этот репозиторий описывает **классическую data-ветку модификации**, а не Unity-реализацию игры.
-
-Новая игровая ветка, runtime-логика, ECS, визуальные системы и Unity-архитектура вынесены отдельно в:
-
-- [`Lizerium.Unity.Structs`](https://github.com/Lizerium/Lizerium.Unity.Structs)
+> [!IMPORTANT]
+> Это слой данных классической ветки (Freelancer).
+>
+> Unity-логика, runtime и визуальные системы находятся отдельно:
+>
+> - https://github.com/Lizerium/Lizerium.Unity.Structs
 
 ---
 
-## Связь с другими направлениями
+## Связи
 
-Данный слой связан с:
+Связан с:
 
-- [`Lizerium.Frameworks.Structs`](https://github.com/Lizerium/Lizerium.Frameworks.Structs) — системы тестирования и валидации
+- https://github.com/Lizerium/Lizerium.Frameworks.Structs — валидация и тестирование
+
+---
+
+## Важно
+
+> [!TIP]
+> Если тебе нужен конкретный формат или инструмент — переходи в соответствующий репозиторий.  
+> Здесь только карта.

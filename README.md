@@ -89,6 +89,12 @@ Intermediate representations used for analysis and processing:
 
 ---
 
+### Code Layer
+
+- https://github.com/Lizerium/Lizerium.Game.Systems.Classes
+
+---
+
 ### Data preparation and validation
 
 Layer used for testing and data validation:
@@ -106,6 +112,7 @@ Layer used for testing and data validation:
 Lizerium.Game.Structs
 ├── Base formats
 └── XML layer
+└── Code layer
 
 ```
 

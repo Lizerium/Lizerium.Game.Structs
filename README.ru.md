@@ -99,6 +99,12 @@
 
 ---
 
+### Кодовая база
+
+- https://github.com/Lizerium/Lizerium.Game.Systems.Classes
+
+---
+
 ## Структура
 
 ```
@@ -106,6 +112,7 @@
 Lizerium.Game.Structs
 ├── Base formats
 └── XML layer
+└── Code layer
 
 ```
 
